@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideMTA - Szerverszabályzat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111317;
+            color: #e1e6ed;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header-logo {
+            display: block;
+            width: 140px;
+            margin: 0 auto 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2ecc71;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        /* Lenyíló menü (Accordion) stílus */
+        .accordion-item {
+            background-color: #1a1d24;
+            border: 1px solid #2a2f3a;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            width: 100%;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 18px 20px;
+            color: #ffffff;
+            font-size: 1.05rem;
+            font-weight: 600;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.2s;
+        }
+
+        .accordion-header:hover {
+            background-color: #222733;
+            color: #2ecc71;
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background-color: #14161c;
+            padding: 0 20px;
+            color: #b0b8c4;
+            font-size: 0.95rem;
+        }
+
+        .accordion-content.active {
+            padding: 20px;
+            max-height: 2000px;
+        }
+
+        .rule-list {
+            list-style-type: none;
+        }
+
+        .rule-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 12px;
+        }
+
+        .rule-list li::before {
+            content: "└";
+            position: absolute;
+            left: 0;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .highlight {
+            color: #2ecc71;
+            font-weight: bold;
+        }
+
+        .badge-red {
+            color: #ff4757;
+            font-weight: bold;
+        }
+
+        .back-btn {
+            display: inline-block;
+            margin-top: 30px;
+            color: #8a99a8;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .back-btn:hover {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="./logo.png" alt="GuideMTA Logo" class="header-logo">
+    <h1>GuideMTA Hivatalos Szerverszabályzat</h1>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Általános szabályok / fogalmak
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li><span class="highlight">A GuideMTA szerver hivatalos nyelve a magyar.</span></li>
+                <li><span class="badge-red">MG (MetaGaming):</span> OOC információ felhasználása IC célokra szigorúan tilos.</li>
+                <li><span class="badge-red">RK (ReKill):</span> Halál utáni bosszúállás tilos. Halálkor a karaktered elfelejti az előzményeket.</li>
+                <li><span class="badge-red">PG (PowerGaming):</span> Hősködés, valótlan cselekedetek végrehajtása tilos.</li>
+                <li><span class="badge-red">DM (DeathMatch):</span> Indok nélküli emberölés szigorúan büntetendő.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Accountra / Karakterre vonatkozó szabályok
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li>Tilos más GuideMTA accountjára engedély nélkül belépni.</li>
+                <li><span class="badge-red">Multiaccount tilos:</span> Egy játékos csak egyetlen fiókkal rendelkezhet.</li>
+                <li>Karakteradás, -vétel és account megosztás szigorúan tilos!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Egyéb fegyveres & illegális szabályok
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li>SafeZone-ban (védett övezetekben) mindennemű illegális tevékenység tilos.</li>
+                <li>Rablás csak megfelelő IC indokkal és felkészültséggel lehetséges.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Átveréssel kapcsolatos szabályok
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li>Tilos átverni másokat 50 000 $ érték felett.</li>
+                <li>PP-s itemekkel való átverés <span class="badge-red">PERMA BAN</span>-t von maga után!</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Rablásokra vonatkozó szabályok (ATM, Bank, Bolt)
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li>Kezdő játékosokat rabolni szigorúan tilos!</li>
+                <li>Rablás során a maximálisan elvihető készpénz limitálva van.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-header">
+            Vadászatval kapcsolatos szabályok
+            <span>▼</span>
+        </button>
+        <div class="accordion-content">
+            <ul class="rule-list">
+                <li>Vadászat csak a kijelölt területeken engedélyezett.</li>
+                <li>Járműből való állatlövés szigorúan TILOS!</li>
+            </ul>
+        </div>
+    </div>
+
+    <a href="szabalyzat.html" class="back-btn">← Vissza a kiválasztóhoz</a>
+</div>
+
+<script>
+    const headers = document.querySelectorAll('.accordion-header');
+    
+    headers.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            content.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
