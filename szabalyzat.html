@@ -3,312 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GuideMTA - Szerverszabályzat</title>
+    <title>GUIDMTA - Szabályzatok</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #0b0e14; color: #e1e6ed; line-height: 1.6; padding: 20px; }
-        .container { max-width: 1100px; margin: 0 auto; }
-        header { text-align: center; padding: 40px 20px; background: linear-gradient(135deg, #1e1035 0%, #0d1b2a 100%); border-radius: 12px; border: 1px solid #7928ca; box-shadow: 0 0 20px rgba(121, 40, 202, 0.3); margin-bottom: 30px; }
-        header h1 { font-size: 2.5rem; color: #fff; text-shadow: 0 0 10px #7928ca, 0 0 20px #7928ca; margin-bottom: 10px; }
-        header p { color: #00dfd8; font-size: 1.1rem; font-weight: 600; }
-        .notice-box { background: rgba(255, 0, 80, 0.1); border-left: 4px solid #ff0050; padding: 15px 20px; border-radius: 6px; margin-bottom: 30px; }
-        .notice-box strong { color: #ff0050; }
-        .rule-section { background: #141923; border: 1px solid #1e2638; border-radius: 10px; padding: 25px; margin-bottom: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .rule-section h2 { font-size: 1.4rem; color: #00dfd8; border-bottom: 2px solid #1e2638; padding-bottom: 10px; margin-bottom: 15px; }
-        .rule-item { margin-bottom: 15px; padding-left: 15px; border-left: 2px solid #2a354d; }
-        .rule-title { font-weight: bold; color: #fff; font-size: 1.05rem; }
-        .rule-desc { color: #a0aec0; font-size: 0.95rem; margin-top: 3px; }
-        .rule-example { color: #00dfd8; font-size: 0.9rem; margin-top: 2px; }
-        .badge-red { background: #ff0050; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-left: 8px; }
-        .badge-purple { background: #7928ca; color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; font-weight: bold; margin-left: 8px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111317;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .site-logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 40px;
+            object-fit: contain;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .btn-discord {
+            background-color: #2b82c9;
+            color: #ffffff;
+        }
+
+        .btn-server {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        .back-link {
+            margin-top: 35px;
+            color: #6c757d;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
 
-<div class="container">
+    <div class="container">
+        <!-- A te saját zöld GUIDMTA logód -->
+        <img src="./logo.png" alt="GUIDMTA Logo" class="site-logo">
 
-    <header>
-        <h1>GuideMTA Szerverszabályzat</h1>
-        <p>Olvasd el figyelmesen, mielőtt feljössz játszani!</p>
-    </header>
+        <!-- Gombok -->
+        <div class="button-group">
+            <!-- Discord Szabályzat gomb -->
+            <a href="dc_szabalyzat.html" class="btn btn-discord">
+                <svg width="18" height="18" viewBox="0 0 127.14 96.36" fill="#ffffff">
+                    <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0,3.36,6.83A97.68,97.68,0,0,0,42.29,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1,-10.85,-5.18c.91,-0.66,1.8,-1.34,2.66,-2a74.57,74.57,0,0,0,64.3,0c.87.68,1.76,1.36,2.66,2a68.68,68.68,0,0,1,-10.87,5.19,77,77,0,0,0,6.89,11.1,105.25,105.25,0,0,0,32.19,-16.14c2.64,-27.38,-4.51,-51.11,-18.88,-72.15ZM42.45,65.69C36.18,65.69,31,60,31,53s5,-12.74,11.43,-12.74S54,45.92,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5.06,-12.74,11.44,-12.74S96.23,45.92,96.12,53,91.08,65.69,84.69,65.69Z"/>
+                </svg>
+                Discord Szabályzat
+            </a>
 
-    <div class="notice-box">
-        <strong>⚠️ Fontos tudnivaló:</strong> A szerverre való felcsatlakozással automatikusan elfogadod az alábbi szabályokat. A szabályzat nem tudására hivatkozni nem mentesít a szankciók alól!
+            <!-- Szerver Szabályzat gomb -->
+            <a href="szerver_szabalyzat.html" class="btn btn-server">
+                📖 Szerver szabályzat
+            </a>
+        </div>
+
+        <a href="index.html" class="back-link">← Vissza a főoldalra</a>
     </div>
-
-    <!-- ÚJONNAN BEKERÜLT SZABÁLYPONTOK -->
-    <div class="rule-section">
-        <h2>🔥 Újonnan bekerült szabálypontok</h2>
-        <div class="rule-item">
-            <span class="rule-title">Halálangyallal TILOS menekülni, lövöldözni!</span> <span class="badge-red">SZIGORÚ</span>
-            <p class="rule-example">↳ Ez frakció független, se illegál se legál nem akciózhat halálangyallal!</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">TILOS a kalózkodás!</span> <span class="badge-red">SZIGORÚ</span>
-            <p class="rule-example">↳ Ez alól kivételt képez a Fegyverhajó!</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Minden olyan fegyver, ami NEM ELREJTHETŐ nagy kalibernek minősül!</span>
-            <p class="rule-example">↳ (Pl.: Desert Eagle, P90, MP5, MP7, stb...)</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Indokolatlanul NEM lehet nálad nagykaliber!</span>
-            <p class="rule-example">↳ Szerelőnél is el kell raknod! Kivételt képez ha épp újraéledtél, vagy halálangyal van rajtad.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Indokolatlanul NEM lehet rajtad golyóálló mellény!</span>
-            <p class="rule-example">↳ Kivételt képez ha épp újraéledtél, vagy halálangyal van rajtad.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">TILOS lvl 4 alatt illegális tevékenységet végezni!</span> <span class="badge-red">SZIGORÚ</span>
-            <p class="rule-example">↳ Frakció nem mentesít ez alól, nem vehetsz részt semmilyen illegális tevékenységben.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">A PG az 1v1 ben is PG!</span>
-            <p class="rule-example">↳ Pl.: Ha fegyver van rád tartva, de te fegyvert rántasz az PG!</p>
-            <p class="rule-example">↳ Kivétel ez alól: Ha egyszerre veszitek elő a fegyvert.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">TILOS legál és illegál frakcióban egyszerre benne lenni!</span>
-            <p class="rule-example">↳ Lehetsz egyszerre 2 frakcióban is, viszont az csak legál legál vagy illegál illegál lehet.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Tilos a fegyverhajót körül körözni megjelenés előtt.</span>
-            <p class="rule-example">↳ Campelésnek minősül. A parton lehet várakozni, körözni hajóval TILOS.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">TILOS indokolatlanul tüzet nyitni az illegális tevékenységet végző játékosra!</span>
-            <p class="rule-example">↳ Nem elég indok hogy ATM et vagy benzinkutat rabolt, ameddig a fegyvert nem veszi kézbe és nem kezd el vele célozni, ezzel veszélyeztetve egy civil vagy akár rendvédelmi személy életét. (Az autót, vagy annak kerekeit sem lehet lőni ha nincs tűzparancs rajta!)</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">TILOS jelöletlen rendvédelmi járműre mindaddig lőni ameddig meg nem bizonyosodsz róla hogy abban egy rendvédelmi személy tartózkodik.</span>
-            <p class="rule-example">↳ Ha közel megy hozzád és tisztán látod hogy rendvédelmi frakcióban van (skin / golyóálló mellény) és van indokod rálőni rálőhetsz. (Érdemes visszamenteni azt a pillanatot amikor megláttad rajta a mellényt a későbbi félreértések elkerülése végett)</p>
-        </div>
-    </div>
-
-    <!-- KOMMUNIKÁCIÓT ELŐSEGÍTŐ SZAVAK, FOGALMAK -->
-    <div class="rule-section">
-        <h2>💬 Kommunikációt elősegítő szavak, fogalmak</h2>
-        <div class="rule-item"><span class="rule-title">HQ</span><p class="rule-example">↳ Egy adott frakció bázisa.</p></div>
-        <div class="rule-item"><span class="rule-title">IRL</span><p class="rule-example">↳ In Real Life > a valóságban.</p></div>
-        <div class="rule-item"><span class="rule-title">IC</span><p class="rule-example">↳ In Character, karakteren belüli dolgok. "T" Gomb megnyomásával használható az IC chat.</p></div>
-        <div class="rule-item"><span class="rule-title">OOC</span><p class="rule-example">↳ Out Of Character, karakteren kívüli dolgok. "B" Gomb megnyomásával használható az OOC chat.</p></div>
-        <div class="rule-item"><span class="rule-title">PK</span><p class="rule-example">↳ Panaszkönyv. Ha valaki a szerveren szabályzati vétséget követ el, képpel / loggal bizonyítva egy fórum topicot nyitva lehet panaszt tenni ellene.</p></div>
-        <div class="rule-item"><span class="rule-title">Crash</span><p class="rule-example">↳ Játékhiba, valami ok folytán a GTA San Andreas leállása.</p></div>
-        <div class="rule-item"><span class="rule-title">Adminisztrátor (admin)</span><p class="rule-example">↳ A szerver, és a játékosok segítői, rendben tartói.</p></div>
-        <div class="rule-item"><span class="rule-title">Kick</span><p class="rule-example">↳ Szerverről való kirúgás.</p></div>
-        <div class="rule-item"><span class="rule-title">Jail</span><p class="rule-example">↳ Szabályzat megszegése esetén kapható büntetés. Börtön, 4 fal között töltött idő. A játékban nem lehet részt venni a jail időtartama alatt.</p></div>
-        <div class="rule-item"><span class="rule-title">Ban</span><p class="rule-example">↳ Időleges vagy végleges kitiltás a játékból.</p></div>
-        <div class="rule-item"><span class="rule-title">RP</span><p class="rule-example">↳ Roleplay Annyit tükröz, szerepjáték, való élettel megegyező viselkedés.</p></div>
-        <div class="rule-item"><span class="rule-title">IG</span><p class="rule-example">↳ In Game, játékon belüli történések.</p></div>
-        <div class="rule-item"><span class="rule-title">AFK</span><p class="rule-example">↳ Away From Keyboard Nincs a gépnél. A szerveren 20 percet lehet AFK olni, ez után kicket kaphat az illető.</p></div>
-        <div class="rule-item"><span class="rule-title">CK</span><p class="rule-example">↳ Characterkill, avagy kivégzés.</p></div>
-        <div class="rule-item"><span class="rule-title">TGF</span><p class="rule-example">↳ Tagfelvétel, pl egy adott frakcióba.</p></div>
-        <div class="rule-item"><span class="rule-title">RTC</span><p class="rule-example">↳ Jármű respawnolása.</p></div>
-        <div class="rule-item"><span class="rule-title">Fix</span><p class="rule-example">↳ Egy jármű megjavítása.</p></div>
-        <div class="rule-item"><span class="rule-title">Get</span><p class="rule-example">↳ Játékos vagy jármű teleportálás.</p></div>
-        <div class="rule-item"><span class="rule-title">Spawn</span><p class="rule-example">↳ Leéledési pont.</p></div>
-        <div class="rule-item"><span class="rule-title">PP</span><p class="rule-example">↳ Prémium Pont.</p></div>
-        <div class="rule-item"><span class="rule-title">CP</span><p class="rule-example">↳ Check Point Pl.:Interior bejárat.</p></div>
-        <div class="rule-item"><span class="rule-title">SSC</span><p class="rule-example">↳ Rise Slot Coin, kaszinó zseton.</p></div>
-        <div class="rule-item"><span class="rule-title">Item</span><p class="rule-example">↳ Tárgy a játékon belül.</p></div>
-        <div class="rule-item"><span class="rule-title">NonScript Frakció</span><p class="rule-example">↳ Script nélküli frakció.</p></div>
-    </div>
-
-    <!-- ÁLTALÁNOS ÉS FRAKCIÓ PARANCSOK -->
-    <div class="rule-section">
-        <h2>🛠️ Általános és Frakció Parancsok</h2>
-        <div class="rule-item"><span class="rule-title">/nearbyvehicles2</span><p class="rule-example">↳ A közelben lévő járművek lekérdezése.</p></div>
-        <div class="rule-item"><span class="rule-title">/getpos & /getposc</span><p class="rule-example">↳ Karakter pozíciójának lekérdezése szerver/kliens oldalon.</p></div>
-        <div class="rule-item"><span class="rule-title">/getinterioreditable</span><p class="rule-example">↳ Szerkeszthető interior méretének lekérdezése.</p></div>
-        <div class="rule-item"><span class="rule-title">/do & /dolow</span><p class="rule-example">↳ A játékon belüli animációval nem megjeleníthető, indirekt történéseket jelenít meg.</p></div>
-        <div class="rule-item"><span class="rule-title">/me & /melow</span><p class="rule-example">↳ A játékon belüli animációval nem megjeleníthető, szándékos cselekvés.</p></div>
-        <div class="rule-item"><span class="rule-title">/ame</span><p class="rule-example">↳ Karakter vizuális leírására szolgál.</p></div>
-        <div class="rule-item"><span class="rule-title">/tuneradio & /tuneradio2</span><p class="rule-example">↳ Rádiófrekvencia beállítása ami IC kommunikációra szolgál.</p></div>
-        <div class="rule-item"><span class="rule-title">/r & /r2</span><p class="rule-example">↳ Rádiófrekvencia használata.</p></div>
-        <div class="rule-item"><span class="rule-title">/visz</span><p class="rule-example">↳ Ezzel a paranccsal lehet a megbilincselt játékosokat mozgatni.</p></div>
-        <div class="rule-item"><span class="rule-title">/motozas</span><p class="rule-example">↳ Másik játékos felszerelésének és készpénz összegének megtekintésére szolgál.</p></div>
-        <div class="rule-item"><span class="rule-title">/cveh</span><p class="rule-example">↳ A járművek ajtajainak kezelése a járművön belülről.</p></div>
-        <div class="rule-item"><span class="rule-title">/protect</span><p class="rule-example">↳ Jármű levédése, ilyenkor a jármű a szerveren marad akkor is ha a tulajdonosa kilép.</p></div>
-        <div class="rule-item"><span class="rule-title">/toghud & /showchat</span><p class="rule-example">↳ HUD és Chat eltűntetése/megjelenítése.</p></div>
-        <div class="rule-item"><span class="rule-title">/b & /clearooc</span><p class="rule-example">↳ OOC chat használata és kiürítése.</p></div>
-        <div class="rule-item"><span class="rule-title">/pay</span><p class="rule-example">↳ Pénz átadása másik játékosnak.</p></div>
-        <div class="rule-item"><span class="rule-title">/id & /lvl</span><p class="rule-example">↳ Játékos ID-jének és szintjének lekérdezése.</p></div>
-        <div class="rule-item"><span class="rule-title">/animpanel & /anims</span><p class="rule-example">↳ Animációk keresése és használata.</p></div>
-        <div class="rule-item"><span class="rule-title">/cuccaim & /time</span><p class="rule-example">↳ Kiegészítő panel és pontos idő lekérdezése.</p></div>
-        <div class="rule-item"><span class="rule-title">/bind & /unbind</span><p class="rule-example">↳ Automatizált parancsok létrehozása és törlése.</p></div>
-        <div class="rule-item"><span class="rule-title">/oldcar</span><p class="rule-example">↳ Utoljára használt jármű ID jének lekérdezése.</p></div>
-        <div class="rule-item"><span class="rule-title">/megprobal & /megprobalja</span><p class="rule-example">↳ Roleplayt elősegítő parancs, 50-50% eséllyel sikerül nem sikerül.</p></div>
-        <div class="rule-item"><span class="rule-title">/s & /mozihang</span><p class="rule-example">↳ IC kiabálás és mozi hangjának némítása.</p></div>
-        <div class="rule-item"><span class="rule-title">/ablak & /minimizedice & /campos & /glue</span><p class="rule-example">↳ Jármű ablakok, Dice panel, Kamera pozíció, Járműre való feltapadás.</p></div>
-        <div class="rule-item"><span class="rule-title">/yt & /tvtime & /stopyt</span><p class="rule-example">↳ Premium TV kezelése YouTube linkkel.</p></div>
-        <div class="rule-item"><span class="rule-title">/tognames & /toglaser</span><p class="rule-example">↳ Nevek ki/bekapcsolása és Laser állítása.</p></div>
-        <div class="rule-item"><span class="rule-title">Frakció parancsok:</span><p class="rule-example">↳ /gov, /gclean, /graffiti, /tisztitas, /policelock, /togd2, /toglegter, /togtraffi, /helicam, /togegysegszam, /nearbyrb, /d, /d2, /mdc, /sirenpanel, /jelvenyadas, /jelvenyelvetel, /spike, /alnev, /lenyomoz, /rbs, /toglaser (Megaphone).</p></div>
-    </div>
-
-    <!-- ÁLTALÁNOS SZABÁLYOK / FOGALMAK -->
-    <div class="rule-section">
-        <h2>📌 Általános szabályok és fogalmak</h2>
-        <div class="rule-item">
-            <span class="rule-title">A szerver hivatalos nyelve a magyar.</span>
-            <p class="rule-example">↳ Ezen nyelvtől eltérni csak fórumon élménykép/off topic részlegben lehet.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">MG (MetaGaming)</span>
-            <p class="rule-desc">OOC információ felhasználása IC.</p>
-            <p class="rule-example">↳ Példa: chatboxból kiolvasod valaki nevét, majd szerepen belül felhasználod, pl.: feljelented.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">DM (DeathMatch)</span>
-            <p class="rule-desc">Ok nélküli ölés.</p>
-            <p class="rule-example">↳ Példa: az utcán valakit, véletlenszerűen megölsz, esetleg olyan indokból, amiért a valóságban sem tennéd, pl.: ellopják a kocsid, beszólt, karamboloztál vele.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">RK (RevengeKill)</span>
-            <p class="rule-desc">Halál utáni bosszú.</p>
-            <p class="rule-example">↳ Példa: megölnek, halálod után korházba kerülsz, ilyenkor a gyilkosod nem keresheted fel és ölheted meg, tűzharc esetén az esemény lezajlásáig nem térhetsz vissza a helyszínre.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">PG (PowerGaming)</span>
-            <p class="rule-desc">Hősködés, olyan dolog amit a valóságban nem mernél megtenni.</p>
-            <p class="rule-example">↳ Példa: többen fegyvert fognak rád és nem teljesíted kérésüket, ellenszegülsz.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">DB (Drive By)</span>
-            <p class="rule-desc">Emberölés járművel.</p>
-            <p class="rule-example">↳ Példa: tilos ráállni járművel másik játékosra és úgy megölni.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">SK (SpawnKill)</span>
-            <p class="rule-desc">Spawnoláskor ölés.</p>
-            <p class="rule-example">↳ Példa: tilos megölni az a játékost aki éppen egy épületből be megy, kimegy mindaddig, amíg nem tölt be neki a pálya, nem mozog el cp ből (kb 3 4 másodperc) továbbá azt, aki éppen bejelentkezett a játékba.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Force RP</span>
-            <p class="rule-desc">Tilos a saját RP det más játékosra ráerőltetned, illetve másik játékos helyett RP zned!</p>
-            <p class="rule-example">↳ Példa: tilos ilyet írnod, hogy /me megüti és ezért ő meghal.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">NonRP</span>
-            <p class="rule-desc">Nem RP s cselekedet.</p>
-            <p class="rule-example">↳ Példa: tilos olyan dolgot tenni a játéban amit a valóságban sem tennél meg, leugratsz kocsival egy hegyről, stb.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Szereptévesztés</span>
-            <p class="rule-desc">Minden olyan cselekedet amely nem tükrözi a karaktered személyiségét.</p>
-            <p class="rule-example">↳ Példa: mentősként anyázol a rendőrnek majd fejbe lövöd.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Interiorok bejelentése</span>
-            <p class="rule-desc">Minden páratlan hónap 20. áig. A be nem jelentett interiorok törlődnek.</p>
-            <p class="rule-example">↳ Bejelentési kötelezettség: 2 havonta 2 hónapon belül, in game, a városházán tudjuk bejelenteni bármilyen interiorunkat ingatlanunkat, ezzel jelezve megerősítve az igényt annak létezésére. Ennek állapota lekérdezhető UCP n és a dashboardban is. Amennyiben nem kerül bejelentésre, törlésre kerül, mely folyamat nem visszafordítható. Más nem vállalhatja át.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Interiorok, interior csoportok eladása</span>
-            <p class="rule-desc">Interiorok, interior csoportok csak egyben eladhatóak. Tilos külön eladni egy házat és a hozzá tartozó többi interiort.</p>
-            <p class="rule-example">↳ Egy interiort/házat és a hozzá tartozó többi interiot, csak egy ember birtokolhat és csak egyben lehet eladni. Egy magánbirtok esetében minden interioriornak egy tulajdonosa kell, hogy legyen.</p>
-        </div>
-    </div>
-
-    <!-- ADMINOKKAL KAPCSOLATOS RULES -->
-    <div class="rule-section">
-        <h2>🛡️ Adminisztrátorokkal kapcsolatos szabályok</h2>
-        <div class="rule-item"><span class="rule-title">Adminok feladata</span><p class="rule-example">↳ Az adminok a szerver szabályzatának betartatásáért felelnek. Jogtalan döntés esetén panaszkönyv nyitható fórumon. Kérdésekkel az adminsegédekhez forduljatok!</p></div>
-        <div class="rule-item"><span class="rule-title">Rágalmazás / Minősítés</span> <span class="badge-red">BAN</span><p class="rule-example">↳ Az admint bármilyen formában rágalmazni/minősíteni tilos! Kitiltást von maga után.</p></div>
-        <div class="rule-item"><span class="rule-title">Hazugság</span> <span class="badge-red">BAN</span><p class="rule-example">↳ Tilos az adminoknak hazudni! Átverés esetén kitiltásban részesülsz.</p></div>
-        <div class="rule-item"><span class="rule-title">Kérések</span><p class="rule-example">↳ Admintól tilos javítást, tankolást, jármű teleportálást, skint kérni. Az adminok nem szeretetszolgálat.</p></div>
-        <div class="rule-item"><span class="rule-title">Jailből való kivétel</span><p class="rule-example">↳ Csak az az admin vehet ki jailből aki berakott! Kivéve ha Fő/SzuperAdmin felülbírálja.</p></div>
-        <div class="rule-item"><span class="rule-title">Tisztelet</span><p class="rule-example">↳ Segítségkérés során kötelező az adminisztrátorral tiszteletteljesen beszélni. Fölösleges reportokat kerüljétek.</p></div>
-        <div class="rule-item"><span class="rule-title">Unban kérelem</span><p class="rule-example">↳ Szerveren tilos az adminoktól unbant kérni! Csak fórumon az unban kérelem topicban lehet!</p></div>
-        <div class="rule-item"><span class="rule-title">Negatív értékelés</span><p class="rule-example">↳ Szerveren tilos az adminokat negatívan értékelni csak azért, mert nem tetszett a bírálata. Csak akkor lehet, ha az ügyintézés alatti stílusával volt probléma.</p></div>
-        <div class="rule-item"><span class="rule-title">Széfkulcsok / Kulcsok</span><p class="rule-example">↳ Széfet csak olyan esetben vegyetek mástól, ha nálad van a kulcs és átadja. Semmilyen admin NEM másol széfkulcsot, kivéve frakciószéfhez. Interior és autókulcsokat sem duplikálunk, mindenhez 1 kulcs lehet!</p></div>
-    </div>
-<!-- ACCOUNT ÉS KARAKTER SZABÁLYOK -->
-    <div class="rule-section">
-        <h2>👤 Account és Karakter szabályok</h2>
-        <div class="rule-item"><span class="rule-title">Fiók használat</span> <span class="badge-red">PERMA BAN</span><p class="rule-example">↳ Mindenki csak a saját fiókját használhatja! Tilos a karakter / fiók adás-vétele, átadása, cseréje még testvérek között is!</p></div>
-        <div class="rule-item"><span class="rule-title">OOC Kereskedelem</span> <span class="badge-red">PERMA BAN</span><p class="rule-example">↳ Tilos InGame vagyont OOC dolgokért (valódi pénz, más játékbéli vagyon) értékesíteni vagy venni. Ennek buktatása vagy szándéka is kitiltást von maga után!</p></div>
-        <div class="rule-item"><span class="rule-title">Vagyonátruházás</span><p class="rule-example">↳ Tilos a megszerzett vagyont másnak ingyen átadni csak úgy, vagy mert meguntad a játékot (vagyonmentés).</p></div>
-        <div class="rule-item"><span class="rule-title">MultiAccount & Serial Váltás</span><p class="rule-example">↳ Tilos egynél több fiókot regisztrálni vagy használni! Számítógép/gépalkatrész csere esetén serial váltást kell kérni fórumon.</p></div>
-    </div>
-
-    <!-- OOC SZABÁLYOK -->
-    <div class="rule-section">
-        <h2>🚫 OOC Szabályok, Segédprogramok & Bugkihasználás</h2>
-        <div class="rule-item"><span class="rule-title">OOC Hirdetés & Stílus</span><p class="rule-example">↳ Tilos az OOC chaten hirdetni, spamelni, illetve más játékosokat vagy adminokat OOC minősíteni, szidni, hergelni.</p></div>
-        <div class="rule-item"><span class="rule-title">Segédprogramok (Cheat / Bot)</span> <span class="badge-red">PERMA BAN</span><p class="rule-example">↳ Bármilyen előnyt nyújtó külső szoftver (AntiAFK, AutoClicker, Kaszinó bot, Aimbot stb.) szigorúan tilos!</p></div>
-        <div class="rule-item"><span class="rule-title">Bugkihasználás</span> <span class="badge-red">BÜNTETENDŐ</span><p class="rule-example">↳ A játékban előforduló hibák (bugok) saját előnyre való használata tilos! Ha hibát találsz, köteles vagy jelenteni.</p></div>
-        <div class="rule-item"><span class="rule-title">Loghamisítás</span> <span class="badge-red">PERMA BAN</span><p class="rule-example">↳ Tilos a console logot vagy bármilyen bizonyítékot átírni, hamisítani adminügy vagy panaszkönyv során!</p></div>
-    </div>
-
-    <!-- EGYÉB SZABÁLYOK -->
-    <div class="rule-section">
-        <h2>📜 Egyéb Viselkedési és RP Szabályok</h2>
-        <div class="rule-item"><span class="rule-title">Hullagyalázás</span><p class="rule-example">↳ Tilos a halott/animban lévő játékos felett nem megfelelő, tiszteletlen animációt vagy RP-t tolni (animspamelés, lepisilés stb.).</p></div>
-        <div class="rule-item"><span class="rule-title">Bizonylatos Tárgyak</span><p class="rule-example">↳ A bizonylathoz kötött tárgyak (fegyverek) csak érvényes bizonylattal tarthatók magadnál legálisan. A bizonylat nem ruházható át!</p></div>
-        <div class="rule-item"><span class="rule-title">Halál RP & Gyógyítás</span><p class="rule-example">↳ Halál után kötelező elfelejteni az azt megelőző eseményeket (RK tilalom). Animból való felsesegítéshez és gyógyításhoz reális RP szükséges.</p></div>
-        <div class="rule-item"><span class="rule-title">Voice Chat Szabályok</span><p class="rule-example">↳ A hangcsatornákon tilos az OOC információk átadása IC szituációban, tilos a fülsebezés, zenebejátszás és az OOC szidás.</p></div>
-    </div>
-
-    <!-- PP ÉS EVENT ITEMEK -->
-    <div class="rule-section">
-        <h2>💎 PP / Event Itemek és Kiegészítők</h2>
-        <div class="rule-item"><span class="rule-title">PP-s és Event Itemek védelme</span><p class="rule-example">↳ Tilos elrabolni vagy átveréssel megszerezni a prémium pontból vásárolt, illetve eventek során szerzett egyedi tárgyakat!</p></div>
-        <div class="rule-item"><span class="rule-title">Egyedi Rendszám és Paintjob</span><p class="rule-example">↳ Tilos a trágár, vulgáris, politikai vagy nem-RP-s szövegek/minták használata rendszámon és autón. A szabályszegő elemek figyelmeztetés nélkül törlésre kerülnek.</p></div>
-    </div>
-
-    <!-- RABLÁS ÉS TÚSZEJTÉS -->
-    <div class="rule-section">
-        <h2>💰 Rablás, Túszejtés és Átverések</h2>
-        <div class="rule-item">
-            <span class="rule-title">Rablási Szabályzat</span>
-            <p class="rule-example">↳ Minimum 20 soros előRP szükséges. Max elvehető készpénz: <strong>350 000 $</strong>. Tilos elvenni: PP/Event itemeket, iratokat, kulcsokat! Lvl 4 alatti kezdőt rabolni TILOS!</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Túszejtési Szabályzat</span>
-            <p class="rule-example">↳ Minimum 25 soros előRP szükséges. Maximum váltságdíj: <strong>3 000 000 $</strong>. Egy frakció 48 órán belül 1-szer tarthat túszejtést. Civilként túszejtés TILOS!</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Átverési Korlátok</span> <span class="badge-purple">MAX 50.000$</span>
-            <p class="rule-example">↳ Tilos átverni másokat 50 000 $ feletti értékben! PP-s dolgokkal, autóval, házzal, garázzsal átverni SZIGORÚAN TILOS!</p>
-        </div>
-    </div>
-
-    <!-- AKCIÓK, ARANYRAKTÁR, ATM, FEGYVERHAJÓ -->
-    <div class="rule-section">
-        <h2>💥 Akciók: ATM, Aranyraktár, Benzinkút & Fegyverhajó</h2>
-        <div class="rule-item">
-            <span class="rule-title">ATM, Aranyraktár, Benzinkút Rablás</span>
-            <p class="rule-example">↳ Kötelező a minimum 20 soros egyedi (nem bindelt) előRP. Minimum 2 fő szükséges frakcióból. Tilos indokolatlanul, készületlenül akciót indítani.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Fegyverhajó Szabályzat</span>
-            <p class="rule-example">↳ Kötelező az előRP és a frakciótagság. Megjelenés előtt campelni és a hajó körül körözni TILOS! Helikopterrel megközelíteni tilos (csak hajóval vagy úszva). A ládát épp leadó embert szándékosan levárni tilos!</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Sziget Szabályai</span>
-            <p class="rule-example">↳ A sziget nem számít forgalmas helynek, itt a játékos szintje nem véd (kezdő is rabolható). A megszerzett láda kivételével minden tárgy/pénz rabolható. Rendőröknek nyomós indok nélkül járőrözni a szigeten tilos.</p>
-        </div>
-    </div>
-
-    <!-- VADÁSZAT ÉS SAFE ZÓNA -->
-    <div class="rule-section">
-        <h2>🌲 Vadászat & Forgalmas Helyek (SafeZone)</h2>
-        <div class="rule-item">
-            <span class="rule-title">Vadászat Szabályai</span>
-            <p class="rule-example">↳ Kizárólag fegyverengedéllyel és engedélyezett fegyverekkel (Remington 870, Colt-45, M14) lehet vadászni! Tilos járművel elütni az állatokat, járműből lőni rájuk (pullozás), vagy más által lelőtt vadat elrabolni.</p>
-        </div>
-        <div class="rule-item">
-            <span class="rule-title">Forgalmas Helyek (SafeZone)</span>
-            <p class="rule-example">↳ Szerelőtelepek, kórházak, autókereskedések, városháza, és minden rendvédelmi HQ. Ezeken a helyeken ok nélkül lövöldözni, rabolni vagy illegális akciót kezdeményezni szigorúan tilos!</p>
-        </div>
-    </div>
-
-    <footer>
-        <p>GuideMTA RolePlay &copy; Minden jog fenntartva | <a href="index.html">Vissza a főoldalra</a></p>
-    </footer>
-
-</div>
 
 </body>
 </html>
