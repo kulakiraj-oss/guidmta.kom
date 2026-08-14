@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideMTA - Hivatalos Szabályzat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0e14;
+            color: #e1e6ed;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e1035 0%, #0d1b2a 100%);
+            border-radius: 12px;
+            border: 1px solid #7928ca;
+            box-shadow: 0 0 20px rgba(121, 40, 202, 0.3);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #fff;
+            text-shadow: 0 0 10px #7928ca, 0 0 20px #7928ca;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #00dfd8;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .notice-box {
+            background: rgba(255, 0, 80, 0.1);
+            border-left: 4px solid #ff0050;
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        .notice-box strong {
+            color: #ff0050;
+        }
+
+        .rule-section {
+            background: #141923;
+            border: 1px solid #1e2638;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .rule-section h2 {
+            font-size: 1.4rem;
+            color: #00dfd8;
+            border-bottom: 2px solid #1e2638;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rule-item {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #2a354d;
+        }
+
+        .rule-title {
+            font-weight: bold;
+            color: #fff;
+            font-size: 1.05rem;
+        }
+
+        .rule-desc {
+            color: #a0aec0;
+            font-size: 0.95rem;
+            margin-top: 3px;
+        }
+
+        .badge-red {
+            background: #ff0050;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .badge-purple {
+            background: #7928ca;
+            color: #fff;
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 1px solid #1e2638;
+        }
+
+        footer a {
+            color: #00dfd8;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>GuideMTA Szerverszabályzat</h1>
+        <p>Olvasd el figyelmesen, mielőtt feljössz játszani!</p>
+    </header>
+
+    <div class="notice-box">
+        <strong>⚠️ Fontos tudnivaló:</strong> A szerverre való felcsatlakozással automatikusan elfogadod az alábbi szabályokat. A szabályzat nem tudására hivatkozni nem mentesít a szankciók alól!
+    </div>
+
+    <!-- Alapvető RP szabályok -->
+    <div class="rule-section">
+        <h2>📌 Alapvető RP Fogalmak & Szabályok</h2>
+        
+        <div class="rule-item">
+            <span class="rule-title">RP (RolePlay)</span>
+            <p class="rule-desc">Karakteralakítás. Úgy viselkedsz, cselekszel és kommunikálsz a játékban, mintha a való életben lennél abban a helyzetben.</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">IC / OOC Szétválasztása</span> <span class="badge-red">SZIGORÚ</span>
+            <p class="rule-desc">Az IC (In Character - karaktered világa) és az OOC (Out of Character - valós világ) keverése tilos (MG - MetaGaming). Amit OOC tudsz (pl. Discordon hallottad), azt a karaktered nem tudja IC!</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">DM (DeathMatch)</span> <span class="badge-red">BÜNTETENDŐ</span>
+            <p class="rule-desc">Indok nélküli emberölés vagy sebzés. Bármilyen fegyveres vagy fizikai támadáshoz nyomós IC indok szükséges.</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">RK (ReKill)</span>
+            <p class="rule-desc">Ha meghalsz, elfelejted az téged ért halál előtti eseményeket, és nem mész vissza bosszút állni azon, aki megölt.</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">PG (PowerGaming)</span>
+            <p class="rule-desc">Hősködés. Olyan dolgot teszel, amit a valóságban soha nem mernél (pl. rád fognak egy fegyvert, és te elszaladsz vagy visszatámadsz puszta kézzel).</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">DB (DriveBy)</span>
+            <p class="rule-desc">Emberölés vagy gázolás járművel szándékosan, nyomós indok nélkül, vagy a sofőrülésből való lövöldözés arra nem alkalmas helyzetben.</p>
+        </div>
+    </div>
+
+    <!-- Viselkedés és Adminisztráció -->
+    <div class="rule-section">
+        <h2>🛡️ Viselkedés & Adminisztráció</h2>
+
+        <div class="rule-item">
+            <span class="rule-title">OOC Stílus és Minősítés</span> <span class="badge-purple">KÖZÖSSÉG</span>
+            <p class="rule-desc">OOC chaten, Discordon és Voice-on a tiszteletmegadás elvárt. Tilos a mások minősítése, szidása, a közösségerózió és a rasszizmus.</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">Adminisztrátori Utasítások</span>
+            <p class="rule-desc">Az adminok szava szent az ügyek során. Ha nem értesz egyet egy döntéssel, az ügy után nyithatsz AdminJelentést a megfelelő fórum/Discord csatornán, de a helyszínen ne flegmázz!</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">Bugki használat (Buguse)</span> <span class="badge-red">PERMA BAN</span>
+            <p class="rule-desc">A szerver vagy a scriptek hibáinak kihasználása saját előny szerzésére szigorúan tilos. Ha hibát találsz, jelezd a vezetőségnek!</p>
+        </div>
+    </div>
+
+    <!-- Illegál & Rablások -->
+    <div class="rule-section">
+        <h2>🔫 Illegális Tevékenységek & Rablások</h2>
+
+        <div class="rule-item">
+            <span class="rule-title">Rablási Szabályok</span>
+            <p class="rule-desc">Rabolni csak nyomós IC indokkal és megfelelő felkészültséggel lehet. Kezdő játékosokat (1-es szintűeket) és munkajárműveseket rabolni tilos!</p>
+        </div>
+
+        <div class="rule-item">
+            <span class="rule-title">Sarkalatos / Védett Övezetek (SafeZone)</span>
+            <p class="rule-desc">Kórházak, városháza, autókereskedés és forgalmas közigazgatási pontok környékén tilos az illegális cselekmény (rablás, emberrablás, lövöldözés).</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>GuideMTA RolePlay &copy; minden jog fenntartva | <a href="index.html">Vissza a főoldalra</a></p>
+    </footer>
+
+</div>
+
+</body>
+</html>
